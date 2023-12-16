@@ -1,0 +1,40 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: url("assets/images/background-pattern-desktop.svg") no-repeat top / 2560px auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 425px){
+    body{
+        background: url("assets/images/background-pattern-mobile.svg") no-repeat top / 100% auto;
+    }
+}
+
+/*.b-g{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+}*/
+
+.FAQ-block{
+    margin: auto;
+    width: 850px;
+    height: 60vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
