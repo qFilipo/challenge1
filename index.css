@@ -4,20 +4,15 @@ html{
 }
 
 body{
-    background: url("assets/images/background-pattern-desktop.svg") no-repeat top / 2560px auto;
+    background: url("assets/images/background-pattern-desktop.svg") no-repeat top / 1440px 300px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-@media (max-width: 425px){
-    body{
-        background: url("assets/images/background-pattern-mobile.svg") no-repeat top / 100% auto;
-    }
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Work Sans';
 }
 
 /*.b-g{
@@ -31,10 +26,113 @@ body{
 
 .FAQ-block{
     margin: auto;
-    width: 850px;
+    width: 520px;
     height: 60vh;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: white;
-    border-radius: 50px;
+    border-radius: 15px;
     box-sizing: border-box;
+    padding: 1rem 2rem;
+    margin: 0;
+    box-shadow: 0px 20px 50px -20px hsl(292, 16%, 49%);
+}
+
+.FAQ-title{
+    height: 20%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.FAQ-title img{
+    padding-right: 7%;
+}
+
+.FAQ-title span{
+    text-shadow: 0 0 1px black;
+}
+
+.FAQ-list{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.FAQ-list .list-item{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+    list-style-type: none;
+    transition: 0.5s ease;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.FAQ-list .list-item div{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.FAQ-list .list-item div p{
+    font-weight: 600;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.FAQ-list .list-item p{
+    padding: 7px 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.FAQ-list .list-item div span{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.FAQ-list .list-item div span img{
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 425px){
+    body{
+        background: url("assets/images/background-pattern-mobile.svg") no-repeat top / 100% auto;
+    }
+    .FAQ-list .list-item{
+        min-height: 60px;
+    }
+    .FAQ-list .list-item div{
+        min-height: 60px;
+    }
+    .FAQ-block{
+        min-width: 320px;
+        min-height: 75vh;
+    }
+    .FAQ-title{
+        max-height: 10%;
+        font-size: 2rem;
+    }
 }
