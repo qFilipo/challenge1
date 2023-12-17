@@ -27,7 +27,7 @@ body{
 .FAQ-block{
     margin: auto;
     width: 520px;
-    height: 60vh;
+    min-height: 60vh;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 15px;
@@ -46,6 +46,7 @@ body{
     font-weight: 900;
     padding: 0;
     margin: 0;
+    border:1px solid red;
 }
 
 .FAQ-title img{
@@ -57,12 +58,13 @@ body{
 }
 
 .FAQ-list{
-    height: 85%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
     margin: 0;
+    border:1px solid red;
 }
 
 .FAQ-list .list-item{
